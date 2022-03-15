@@ -876,6 +876,12 @@ let dictionary = [
         'def2': 'A firmly held belief.',
         'hint': 'c---------',
     },
+    {
+        'word': 'redeem',
+        'def1': 'To make up for a past failure or wrongdoing.',
+        'def2': 'To exchange for money or a reward.',
+        'hint': 'r-----',
+    },
 
 
 

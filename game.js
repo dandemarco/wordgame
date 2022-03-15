@@ -71,23 +71,18 @@ function playGame(previousWords, entries) {
     def2Section.innerHTML = def2
 
     submitAnswerBtn.addEventListener('click', function() {
-        //Disable answer and hint buttons
-        submitAnswerBtn.disabled = true
-        submitAnswerBtn.style.visibility="hidden"
-        hintBtn.disabled = true
-        hintBtn.style.visibility="hidden"
-
-        let userAnswer = userAnswerElement.value
+        let userAnswer = userAnswerElement.value.trim()
         if (userAnswer.toUpperCase() === word.toUpperCase()) {
-            result.innerHTML = `Correct!`
+            submitAnswerBtn.disabled = true
+            submitAnswerBtn.style.visibility="hidden"
+            hintBtn.disabled = true
+            hintBtn.style.visibility="hidden"
+            result.innerHTML = `Correct! The word was <i>${word}!`
             playAgainBtn.innerHTML = 'More Words!'
             correctAnswers++
             updateScore(correctAnswers, totalWords)
         } else {
-            result.innerHTML = `Nope! The word was <i>${word}</i>.`
-            playAgainBtn.innerHTML = 'More Words!'
-            wrongAnswers++
-            updateScore(correctAnswers, totalWords)
+            result.innerHTML = `Not quite. Try again!`
         }
     })
 
