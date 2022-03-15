@@ -80,12 +80,12 @@ function playGame(previousWords, entries) {
         let userAnswer = userAnswerElement.value
         if (userAnswer.toUpperCase() === word.toUpperCase()) {
             result.innerHTML = `Correct!`
-            playAgainBtn.innerHTML = 'Play Again'
+            playAgainBtn.innerHTML = 'More Words!'
             correctAnswers++
             updateScore(correctAnswers, totalWords)
         } else {
             result.innerHTML = `Nope! The word was <i>${word}</i>.`
-            playAgainBtn.innerHTML = 'Play Again'
+            playAgainBtn.innerHTML = 'More Words!'
             wrongAnswers++
             updateScore(correctAnswers, totalWords)
         }
