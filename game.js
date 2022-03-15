@@ -77,7 +77,7 @@ function playGame(previousWords, entries) {
             submitAnswerBtn.style.visibility="hidden"
             hintBtn.disabled = true
             hintBtn.style.visibility="hidden"
-            result.innerHTML = `Correct! The word was <i>${word}!`
+            result.innerHTML = `Correct! The word was <i>${word}!</i>`
             playAgainBtn.innerHTML = 'More Words!'
             correctAnswers++
             updateScore(correctAnswers, totalWords)
