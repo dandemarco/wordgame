@@ -62,7 +62,7 @@ let dictionary = [
 {
         'word': 'treat',
         'def1': 'To give medical care.',
-        'def2': 'An event or item that is out of the ordinary and gives great pleasure.',
+        'def2': 'A gift; an unexpected source of delight or joy.',
         'hint': 't----',
     },
 {

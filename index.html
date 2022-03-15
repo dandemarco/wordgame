@@ -17,6 +17,8 @@
 <div class="content m-4 center-block">
     <h1>Dan's Word Game</h1>
 
+    <p>Can you figure out the word that fits?</p>
+
     <h3 id="def1">Definition 1</h3>
     <h3 id="def2">Definition 2</h3>
 
@@ -28,19 +30,31 @@
     <h3 id="result"></h3>
     <h3 id="score"></h3>
 
-    <button class="btn btn-outline-secondary" type="button" id="submit-answer">Submit</button>
-
-    <div class="hint-btn">
-        <button class="btn btn-outline-secondary" type="button" id="hint-btn">Hint</button>
+    <div class="row">
+        <div class="col">
+            <button class="btn btn-success" type="button" id="submit-answer">Submit</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-light" type="button" id="hint-btn">Hint</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-dark" type="button" id="play-again-btn">Skip</button>
+        </div>
+      </div>
     </div>
+    
+    
+    
 
-    <div class="play-again-btn">
-        <button class="btn btn-outline-secondary" type="button" id="play-again-btn">Skip</button>
-    </div>
     
 
     <div id="history"></div>
 </div>
+
+<div class="col-md-4">
+    <p>Check out the code <a href=https://github.com/dandemarco/wordgame>on GitHub.</a></p>
+</div>
+
 </body>
 
 </html>
